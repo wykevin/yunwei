@@ -1,0 +1,33 @@
+{
+  "SecretId": "xxx",
+  "SecretKey": "xxx",
+  "Region": "ap-beijing",
+  "MailReceivers": [
+    "x.x.x.x"
+  ],
+  "Program": {
+    "pirate": {
+      "DirType": [
+        "bin",
+        "conf"
+      ],
+      "TestServerInfo": {
+        "SshUser": "root",
+        "SshIp": "x.x.x.x",
+        "ServerDir": "/data/www/hosts/pirate"
+      },
+      "OpsServerInfo": {
+        "BackupDir": "/data/backup/pirate",
+        "PreReleaseDir": "/data/prerelease/pirate"
+      },
+      "ReleaseServerInfo": {
+        "SshUser": "root",
+        "ServerDir": "/data/www/hosts/pirate"
+      },
+      "LoadBalancerId": [
+        "lb-xxx",
+        "lb-xxx"
+      ]
+    }
+  }
+}
