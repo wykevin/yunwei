@@ -1,33 +1,36 @@
 {
   "SecretId": "xxx",
   "SecretKey": "xxx",
+  "Username": "xxx",
+  "Password": "xxx",
   "Region": "ap-beijing",
   "MailReceivers": [
-    "x.x.x.x"
+    "test@xxx.com"
   ],
   "Program": {
-    "pirate": {
+    "test": {
       "DirType": [
         "bin",
         "conf"
       ],
       "TestServerInfo": {
-        "SshUser": "root",
-        "SshIp": "x.x.x.x",
-        "ServerDir": "/data/www/hosts/pirate"
+        "SshUser": "dev",
+        "SshIp": "1.1.1.1",
+        "ServerDir": "/data/hosts/test"
       },
       "OpsServerInfo": {
-        "BackupDir": "/data/backup/pirate",
-        "PreReleaseDir": "/data/prerelease/pirate"
+        "BackupDir": "/data/backup/test",
+        "PreReleaseDir": "/data/prerelease/test"
       },
       "ReleaseServerInfo": {
-        "SshUser": "root",
-        "ServerDir": "/data/www/hosts/pirate"
+        "SshUser": "dev",
+        "ServerDir": "/tmp"
       },
       "LoadBalancerId": [
-        "lb-xxx",
-        "lb-xxx"
-      ]
+        "lb-id1",
+        "lb-id2"
+      ],
+      "LBHealthUrl": ":8888/test"
     }
   }
 }

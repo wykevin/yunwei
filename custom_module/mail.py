@@ -8,14 +8,12 @@ import smtplib
 import json
 
 
-def send_mail(msg):
-    with open("config/config.json") as jsonfile:
-        config = json.load(jsonfile)
+def send_mail(config, msg):
     mail_host = "smtp.exmail.qq.com"  # 设置服务器
-    mail_user = "wangyikai@hortorgames.com"  # 用户名
-    mail_pass = "gwEe62TYbGT3kKiV"  # 口令
+    mail_user = "xxx"  # 用户名
+    mail_pass = "xxx"  # 口令
 
-    sender = 'wangyikai@hortorgames.com'
+    sender = 'xxx'
     receivers = config["MailReceivers"]  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
 
     message = MIMEText(msg, 'plain', 'utf-8')

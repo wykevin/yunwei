@@ -21,5 +21,8 @@
 """
    Finish List:
     1.  Transfer % Backup
-    2.  Rollback
+    2.  Gray update
+    3.  Restart
+    4.  Rollback
+    5.  Add Server
 """
